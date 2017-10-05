@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verkefni 6 d.1</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<main><div>Jón</div><div>Gunnar</div><div>Karen</div></main>
+
+	<script type="text/javascript">
+		"use strict";
+		let names = document.getElementsByTagName('main')[0];
+		let jon = names.firstChild;
+		jon.setAttribute('class', 'john');
+		let karen = names.lastChild;
+		names.removeChild(karen);
+		var gunnar = names.firstChild.nextSibling.firstChild.nodeValue;
+		gunnar = gunnar.replace('Gunnar', 'Jakob');
+		names.firstChild.nextSibling.firstChild.nodeValue = gunnar;
+	</script>
+</body>
+</html>
