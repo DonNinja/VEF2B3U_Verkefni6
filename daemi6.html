@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verkefni 6 d.6</title>
+	<meta charset="utf-8">
+</head>
+<body>
+		<script type="text/javascript">
+			"use strict";
+			var main = document.createElement('main');
+			var mainposition = document.getElementsByTagName('body')[0];
+			mainposition.appendChild(main);
+			main.setAttribute('id', 'mainThing');
+			var maindiv = document.createElement('div');
+			maindiv.setAttribute('class', 'pizza');
+			main.appendChild(maindiv);
+			var div1 = document.createElement('div');
+			div1.setAttribute('class', 'pizzaName');
+			var div1text = document.createTextNode('Pizza with tons of pepperoni');
+			div1.appendChild(div1text);
+			var div2 = document.createElement('div');
+			div2.setAttribute('class', 'size');
+			var div2text = document.createTextNode('L');
+			div2.appendChild(div2text);
+			var div3 = document.createElement('div');
+			div3.setAttribute('class', 'price');
+			var div3text = document.createTextNode('2000');
+			div3.appendChild(div3text);
+			var div4 = document.createElement('div');
+			div4.setAttribute('class', 'toppingContainer');
+			maindiv.appendChild(div1);
+			maindiv.appendChild(div2);
+			maindiv.appendChild(div3);
+			maindiv.appendChild(div4);
+
+			var span1 = document.createElement('span');
+			span1.setAttribute('class', 'topping');
+			var span1text = document.createTextNode('Pepperoni &');
+			span1.appendChild(span1text);
+			var span2 = document.createElement('span');
+			span2.setAttribute('class', 'topping');
+			var span2text = document.createTextNode('Pepperoni &');
+			span2.appendChild(span2text);
+			var span3 = document.createElement('span');
+			span3.setAttribute('class', 'topping');
+			var span3text = document.createTextNode('Cheddar');
+			span3.appendChild(span3text);
+
+			div4.appendChild(span1);
+			div4.appendChild(span2);
+			div4.appendChild(span3);
+		</script>
+</body>
+</html>

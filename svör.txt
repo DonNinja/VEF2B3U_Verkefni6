@@ -1,0 +1,1 @@
+5. innerHTML er betra fyrir augun þegar maður er að lesa kóðann, en það er ekki öruggt að það virkar allstaðar á meðan DOM manipulation er alveg tryggt til að virka allstaðar.

@@ -6,18 +6,24 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<main><div>Jón</div><div>Gunnar</div><div>Karen</div></main>
+	<main
+		><div>Jón</div
+		><div>Gunnar</div
+		><div>Karen</div
+	></main>
 
 	<script type="text/javascript">
 		"use strict";
 		let names = document.getElementsByTagName('main')[0];
 		let jon = names.firstChild;
-		jon.setAttribute('class', 'john');
+		jon.setAttribute('class', 'redcolour');
 		let karen = names.lastChild;
 		names.removeChild(karen);
 		var gunnar = names.firstChild.nextSibling.firstChild.nodeValue;
 		gunnar = gunnar.replace('Gunnar', 'Jakob');
 		names.firstChild.nextSibling.firstChild.nodeValue = gunnar;
+		let jonattr = jon.getAttribute('class');
+		jon.innerHTML += ' er með klasann ' + jonattr;
 	</script>
 </body>
 </html>
